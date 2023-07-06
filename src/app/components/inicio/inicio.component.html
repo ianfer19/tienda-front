@@ -1,0 +1,64 @@
+<div style="padding-top: 50px;"><div id="background"></div>
+
+<div class="overlay">
+  <section style="width: 90%; padding-left: 9%;" class="section d-flex">
+    <div style="background-color:white;" class="left">
+      <img style="height: 100%;"  src="../../../assets/imagenes/login-image.jpg"/>
+    </div>
+    <div style="background-color:white; margin-left: 5px; "  class="right">
+      <h1 style="color: rgb(255, 0, 157); margin-top: 15px;">Bienvenidos a Shooping Wto2</h1>
+      <p style="font-family: 'Arial', sans-serif; font-size: 18px; color: #333;">
+        ¡Explora nuestra tienda en línea hoy mismo y descubre las últimas tendencias de la moda a solo un clic de distancia! Esperamos que disfrutes de tu experiencia de compra con nosotros y que encuentres prendas que te hagan sentir seguro/a y a la moda.
+      </p>
+      <img style="height: 100px; width: 200px;"  src="https://static.vecteezy.com/system/resources/previews/001/848/830/non_2x/clothes-hanging-on-line-with-sky-background-free-vector.jpg"/>
+    </div>
+  </section>
+</div>
+
+<div  style=" width: 80%;  margin-left: 128px; margin-bottom: 200px;   border-radius: 2%;" class="overlay">
+  <section style="margin-top: -50px; padding-left: 2%;"  class="servicios">
+    <div class="container-ofertas">
+      <div style="width: 80px;background-color: white; height: 300px;" *ngFor="let producto of productos" class="producto">
+        <div class="img">
+          <img style="height: 150px;" [src]="producto.imagen" alt="Imagen del producto" class="producto-imagen">
+        </div>
+        <div class="card-body">
+          <h5 style=" font-size: 18px;" class="card-title text-orange nombre-producto">{{ producto.nombre }}</h5>
+          <p style="margin-left: 5px; text-align: left;" class="card-text categoria-producto">Categoría: {{ producto.categoria }}</p>
+          <p style="margin-left: 5px;  text-align: left;" class="card-text precio-producto">Precio: {{ producto.precio }}</p>
+          <a style="background-color: orange;" href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+
+<footer class="footer fixed-bottom" style="background-color: rgb(56, 68, 68);">
+  <div style="margin-top: 10px;" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-inline social-media">
+          <li class="list-inline-item">
+            <a href="https://wa.me/300232322" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/lgs-barberia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/lg-barberia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <p style="color: orange;" class="phone-number">Teléfono: +57 300232322</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>

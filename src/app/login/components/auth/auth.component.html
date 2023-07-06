@@ -1,0 +1,106 @@
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="../../../../assets/imagenes/login-image.jpg"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+<!-- Pills navs -->
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="tab-login" style="cursor: pointer;" data-mdb-toggle="pill" (click)="botonlogin()" role="tab"
+      aria-controls="pills-login" >Iniciar sesión</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="tab-register" style="cursor: pointer;" data-mdb-toggle="pill"(click)="botonregister()" role="tab"
+      aria-controls="pills-register" aria-selected="false">Registrarse</a>
+  </li>
+</ul>
+<!-- Pills navs -->
+
+<!-- Pills content -->
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+    <form>
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div class="form-outline mb-4">
+        <input type="text" name="username" id="loginName" class="form-control" [(ngModel)]="username" placeholder="Nombre de usuario" required />
+        <label class="form-label" for="loginName">Usuario</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" name="password" id="loginPassword" class="form-control" [(ngModel)]="password" placeholder="Contraseña" required />
+        <label class="form-label" for="loginPassword">Contraseña</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mb-4">Iniciar sesión</button>
+
+      <p class="error-message" style="color: red;" *ngIf="error">{{ error }}</p>
+    </form>
+      <!-- 2 column grid layout -->
+      <div class="row mb-4">
+        <div class="col-md-6 d-flex justify-content-center">
+          <!-- Checkbox -->
+          <div class="form-check mb-3 mb-md-0">
+            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+            <label class="form-check-label" for="loginCheck">Mantener sesión </label>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+          <!-- Simple link -->
+          <a href="#!">¿Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>No eres miembro? <a href="#!">Registrarse</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer fixed-bottom" style="background-color: rgb(56, 68, 68);">
+  <div style="margin-top: 10px;" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-inline social-media">
+          <li class="list-inline-item">
+            <a href="https://wa.me/300232322" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/lgs-barberia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/lg-barberia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <p style="color: rgb(0, 140, 255);" class="phone-number">Teléfono: +57 300232322</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<router-outlet></router-outlet>

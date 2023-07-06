@@ -1,0 +1,95 @@
+<div ><section class="vh-100">
+  <div style="padding-bottom: -100px;" class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-md-8 col-lg-7 col-xl-6">
+        <img src="../../../../assets/imagenes/login-image.jpg"
+          class="img-fluid" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab-login" style="cursor: pointer;" data-mdb-toggle="pill" (click)="botonlogin()" role="tab"
+              aria-controls="pills-login" aria-selected="false">Iniciar sesión</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab-register" style="cursor: pointer;" data-mdb-toggle="pill"(click)="botonregister()" role="tab"
+              aria-controls="pills-register" aria-selected="true">Registrarse</a>
+          </li>
+        </ul>
+        <form>
+
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="registerName">Nombre</label>
+            <input type="text" id="registerName" class="form-control" />
+
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="registerEmail">Correo</label>
+            <input type="email" id="registerEmail" class="form-control" />
+
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="registerPassword">Contraseña</label>
+            <input type="password" id="registerPassword" class="form-control" />
+
+          </div>
+
+          <!-- Repeat Password input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="registerRepeatPassword">Repetir contraseña</label>
+            <input type="password" id="registerRepeatPassword" class="form-control" />
+
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+              aria-describedby="registerCheckHelpText" />
+            <label class="form-check-label" for="registerCheck">
+              Estoy de acuerdo con los terminos
+            </label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-3" (click)="login()">Iniciar sesión</button>
+        </form>
+  </div>
+</div>
+  </div>
+</section>
+</div>
+
+<footer class="footer fixed-bottom" style="background-color: rgb(56, 68, 68);">
+  <div style="margin-top: 10px;" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-inline social-media">
+          <li class="list-inline-item">
+            <a href="https://wa.me/300232322" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/lgs-barberia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/lg-barberia" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <p style="color: rgb(0, 140, 255);" class="phone-number">Teléfono: +57 300232322</p>
+      </div>
+    </div>
+  </div>
+</footer>
+

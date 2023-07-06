@@ -1,0 +1,187 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+p{
+  color: black;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('https://img.freepik.com/vector-gratis/banner-elementos-handrawn-venta_125540-187.jpg') center center no-repeat fixed;
+  background-size: cover;
+  animation: rotateBackground 10s linear infinite;
+}
+
+@keyframes rotateBackground {
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 1;
+  }
+  25% {
+      opacity: 1;
+      background-image: url('https://img.freepik.com/vector-gratis/banners-rebajas-ropa-foto_23-2148219777.jpg?w=2000');
+  }
+  45% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+      background-image: url('https://img.freepik.com/vector-gratis/banners-rebajas-ropa-foto_23-2148219779.jpg');
+  }
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 50px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.section {
+  margin-top: 50px;
+}
+
+.left {
+  flex-basis: 30%;
+}
+
+.left img {
+  width: 100%;
+  height: auto;
+}
+
+.right {
+  flex-basis: 70%;
+  padding-left: 20px;
+}
+
+.right h1 {
+  font-size: 24px;
+}
+
+.right p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.servicios-cont h1 {
+  font-size: 15px;
+}
+
+.titulo-servicios{
+  font-size: 25px;
+}
+
+.col-md-3 {
+  border: 1px solid black;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  background-color:white;
+}
+
+.row {
+  display: flex!;
+  flex-wrap: wrap;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-md-3 img{
+  width: 100%;
+  height: 200px
+}
+
+.col-md-3 p {
+  text-align: left;
+}
+
+.list-inline-item a {
+  display: inline-block;
+  margin-right: 10px;
+  color: orange;
+}
+
+
+.whatsapp:hover {
+  color: #25D366;
+}
+
+.instagram:hover {
+  color: #E4405F;
+}
+
+.facebook:hover {
+  color: #3B5998;
+}
+
+.container-ofertas{
+  display: inline-block;
+  display: flex;
+}
+
+.producto {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  flex: 1;
+  margin: 5px;
+  border-radius: 0 5% 0 5%;
+}
+.producto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+
+}
+.producto .name {
+  font-weight: bold;
+}
+.producto .category {
+  color: #888;
+  margin-bottom: 5px;
+}
+.producto .price {
+  font-weight: bold;
+}
+
+.producto-imagen {
+  border-radius: 0 5% 0 0;
+  width: 100%;
+  height: 30px;
+}
+
+.producto-bajo{
+  margin-top: 20px;
+}
+
+
+.card-img-top {
+  object-fit: contain;
+}
+
+.nombre-producto {
+  font-size: 24px;
+  color: orange;
+}
+
+.categoria-producto,
+.precio-producto {
+  font-size: 14px;
+}

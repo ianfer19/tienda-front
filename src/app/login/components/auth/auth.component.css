@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.login-button, .register-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.register-button {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+}
+
+.login-button:hover, .register-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+h3 {
+  margin-top: 20px;
+}

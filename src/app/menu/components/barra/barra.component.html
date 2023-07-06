@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Shooping Wto2</a>
+    <div class="navbar-collapse justify-content-center">
+      <form class="form-inline my-2 my-lg-0 ">
+        <div class="input-group ">
+          <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <li><p style="color: white; padding-top: 8px;">Bienvenido, {{token}}</p></li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i style="cursor: pointer;" class="fas fa-shopping-cart fa-lg " (click)="carrito()"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="cursor: pointer;">
+            <i  class="fas fa-sign-out-alt fa-lg " (click)="out()"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        <router-outlet></router-outlet>
