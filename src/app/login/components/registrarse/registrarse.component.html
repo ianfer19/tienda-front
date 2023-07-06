@@ -22,28 +22,18 @@
           <div class="form-outline mb-4">
             <label class="form-label" for="registerName">Nombre</label>
             <input type="text" id="registerName" class="form-control" />
-
           </div>
 
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <label class="form-label" for="registerEmail">Correo</label>
-            <input type="email" id="registerEmail" class="form-control" />
-
+            <label class="form-label" for="registerEmail">Usuario</label>
+            <input type="text" id="username" name="username" [(ngModel)]="newUsername" class="form-control"/>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
             <label class="form-label" for="registerPassword">Contraseña</label>
-            <input type="password" id="registerPassword" class="form-control" />
-
-          </div>
-
-          <!-- Repeat Password input -->
-          <div class="form-outline mb-4">
-            <label class="form-label" for="registerRepeatPassword">Repetir contraseña</label>
-            <input type="password" id="registerRepeatPassword" class="form-control" />
-
+            <input class="form-control" type="password" name="password" id="password" [(ngModel)]="newPassword">
           </div>
 
           <!-- Checkbox -->
@@ -56,7 +46,9 @@
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-3" (click)="login()">Iniciar sesión</button>
+          <button type="submit" class="btn btn-primary btn-block mb-3" (click)="registerUser()">Iniciar sesión</button>
+
+          <p class="error-message" style="color: red;" *ngIf="error">{{ error }}</p>
         </form>
   </div>
 </div>

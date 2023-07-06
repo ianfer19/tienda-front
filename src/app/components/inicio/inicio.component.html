@@ -26,7 +26,7 @@
           <h5 style=" font-size: 18px;" class="card-title text-orange nombre-producto">{{ producto.nombre }}</h5>
           <p style="margin-left: 5px; text-align: left;" class="card-text categoria-producto">Categoría: {{ producto.categoria }}</p>
           <p style="margin-left: 5px;  text-align: left;" class="card-text precio-producto">Precio: {{ producto.precio }}</p>
-          <a style="background-color: orange;" href="#" class="btn">Comprar</a>
+          <a style="background-color: orange;" class="btn" (click)="agregarAlCarrito(producto)">Comprar</a>
         </div>
       </div>
     </div>
